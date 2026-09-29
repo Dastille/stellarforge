@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StellarForge — forging.">
+  <meta name="color-scheme" content="dark">
+  <title>StellarForge</title>
+  <style>
+    :root {
+      --bg: #0a0612;
+      --glow: #ff6b2c;
+      --ember: #ffb347;
+      --violet: #7c5cff;
+      --text: #fff4e8;
+      --muted: #c4a892;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 55% 45% at 20% 80%, rgba(255, 107, 44, 0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 45% 40% at 85% 20%, rgba(124, 92, 255, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 50% 50%, rgba(255, 179, 71, 0.08) 0%, transparent 70%),
+        var(--bg);
+      text-align: center;
+      padding: 2rem;
+    }
+    main { max-width: 28rem; }
+    .mark {
+      width: 3.5rem; height: 3.5rem; margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: conic-gradient(from 210deg, var(--glow), var(--ember), var(--violet), var(--glow));
+      box-shadow: 0 0 40px rgba(255, 107, 44, 0.45);
+      animation: pulse 3.2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.06); opacity: 0.88; }
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .status {
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ember);
+      border: 1px solid rgba(255, 179, 71, 0.35);
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      background: rgba(255, 107, 44, 0.12);
+      margin-bottom: 1.25rem;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .domains {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: rgba(196, 168, 146, 0.75);
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"></div>
+    <h1>StellarForge</h1>
+    <p class="status">Forging</p>
+    <p>Living economies any game can plug into.</p>
+    <p class="domains">stellarforge.network · stellarforge.space</p>
+  </main>
+</body>
+</html>
