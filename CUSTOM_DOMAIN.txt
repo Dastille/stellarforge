@@ -1,0 +1,6 @@
+Primary custom domain for this site: stellarforge.network
+
+To activate after DNS points at GitHub Pages:
+  mv CNAME.pending CNAME && git add CNAME && git commit -m "Activate custom domain" && git push
+
+Do NOT activate before DNS — GitHub will redirect *.github.io to the custom domain.
